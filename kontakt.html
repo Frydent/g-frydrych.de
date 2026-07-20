@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grzegorz Frydrych — kontakt</title>
+<meta name="theme-color" content="#40382F">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #40382F; font-family: 'Montserrat', system-ui, sans-serif; }
+  a { text-decoration: none; color: #E3CFA9; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  .wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 56px 24px 48px; position: relative; }
+  .inner { width: 100%; max-width: 420px; display: flex; flex-direction: column; align-items: center; animation: fadeUp 0.7s ease both; }
+  .logo { width: 290px; max-width: 82vw; display: block; }
+  .name { font-weight: 300; font-size: 17px; letter-spacing: 0.42em; text-indent: 0.42em; color: #E3CFA9; margin-top: 26px; text-align: center; white-space: nowrap; }
+  @media (max-width: 400px) { .name { font-size: 14px; } }
+  .btns { display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 340px; margin-top: 42px; }
+  .row { display: flex; gap: 14px; }
+  .btn { display: flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border: 1px solid rgba(227,207,169,0.5); border-radius: 2px; font-weight: 300; font-size: 12px; letter-spacing: 0.22em; text-indent: 0.22em; color: #E3CFA9; transition: all .18s ease; }
+  .row .btn { flex: 1; }
+  .btn:hover { border-color: #E3CFA9; background: rgba(227,207,169,0.1); color: #E3CFA9; }
+  .btn.primary { background: #E3CFA9; border-color: #E3CFA9; color: #40382F; font-weight: 400; }
+  .btn.primary:hover { background: #CFAC72; border-color: #CFAC72; color: #40382F; }
+  .btn.door { justify-content: space-between; text-indent: 0; padding: 0 22px; }
+  .btn.door small { font-size: 11px; letter-spacing: 0.1em; opacity: 0.6; font-weight: 300; }
+  .foot { font-weight: 300; font-size: 11px; letter-spacing: 0.18em; text-indent: 0.18em; color: rgba(227,207,169,0.45); margin-top: 40px; text-align: center; line-height: 1.9; }
+  .rule { width: 44px; height: 1px; background: #E3CFA9; opacity: 0.45; margin: 30px 0 34px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="inner">
+    <img class="logo" src="assets/monogram.png" alt="gf">
+    <div class="name">GRZEGORZ&nbsp;&nbsp;FRYDRYCH</div>
+    <div class="rule"></div>
+    <div class="btns" style="margin-top: 0;">
+      <a class="btn primary" href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3AFrydrych%3BGrzegorz%3B%3B%3B%0D%0AFN%3AGrzegorz%20Frydrych%0D%0ATEL%3BTYPE%3DCELL%3A%2B491603640793%0D%0ATEL%3BTYPE%3DCELL%3A%2B48604527834%0D%0AEMAIL%3Agf%40g-frydrych.de%0D%0AEMAIL%3Afrymed%40post.pl%0D%0AURL%3Ahttps%3A%2F%2Fwww.g-frydrych.de%0D%0AADR%3BTYPE%3DHOME%3A%3B%3BWutachtalblick%2014%3BBonndorf%20im%20Schwarzwald%3B%3B79848%3BDeutschland%0D%0AEND%3AVCARD" download="Grzegorz-Frydrych.vcf">ZAPISZ KONTAKT</a>
+      <div class="row">
+        <a class="btn" href="tel:+491603640793">TEL. DE</a>
+        <a class="btn" href="tel:+48604527834">TEL. PL</a>
+      </div>
+      <a class="btn" href="mailto:gf@g-frydrych.de">NAPISZ E-MAIL</a>
+      <a class="btn" href="https://www.g-frydrych.de">WWW.G-FRYDRYCH.DE</a>
+    </div>
+    <div class="foot">+49 160 3640793 · +48 604 527 834<br>GF@G-FRYDRYCH.DE · FRYMED@POST.PL</div>
+  </div>
+</div>
+</body>
+</html>

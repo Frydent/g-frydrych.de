@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grzegorz Frydrych</title>
+<meta name="description" content="Grzegorz Frydrych — privat.">
+<meta name="theme-color" content="#40382F">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta property="og:title" content="Grzegorz Frydrych">
+<meta property="og:description" content="Privat">
+<meta property="og:image" content="https://g-frydrych.de/assets/og-image.png">
+<meta property="og:url" content="https://g-frydrych.de">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #40382F; font-family: 'Montserrat', system-ui, sans-serif; }
+  a { text-decoration: none; color: #E3CFA9; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  .wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 56px 24px 48px; position: relative; }
+  .inner { width: 100%; max-width: 420px; display: flex; flex-direction: column; align-items: center; animation: fadeUp 0.7s ease both; }
+  .logo { width: 290px; max-width: 82vw; display: block; }
+  .name { font-weight: 300; font-size: 17px; letter-spacing: 0.42em; text-indent: 0.42em; color: #E3CFA9; margin-top: 26px; text-align: center; white-space: nowrap; }
+  @media (max-width: 400px) { .name { font-size: 14px; } }
+  .btns { display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 340px; margin-top: 42px; }
+  .row { display: flex; gap: 14px; }
+  .btn { display: flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border: 1px solid rgba(227,207,169,0.5); border-radius: 2px; font-weight: 300; font-size: 12px; letter-spacing: 0.22em; text-indent: 0.22em; color: #E3CFA9; transition: all .18s ease; }
+  .row .btn { flex: 1; }
+  .btn:hover { border-color: #E3CFA9; background: rgba(227,207,169,0.1); color: #E3CFA9; }
+  .btn.primary { background: #E3CFA9; border-color: #E3CFA9; color: #40382F; font-weight: 400; }
+  .btn.primary:hover { background: #CFAC72; border-color: #CFAC72; color: #40382F; }
+  .btn.door { justify-content: space-between; text-indent: 0; padding: 0 22px; }
+  .btn.door small { font-size: 11px; letter-spacing: 0.1em; opacity: 0.6; font-weight: 300; }
+  .foot { font-weight: 300; font-size: 11px; letter-spacing: 0.18em; text-indent: 0.18em; color: rgba(227,207,169,0.45); margin-top: 40px; text-align: center; line-height: 1.9; }
+  .sep { display: flex; align-items: center; gap: 14px; margin: 12px 0 2px; }
+  .sep .l { flex: 1; height: 1px; background: rgba(227,207,169,0.2); }
+  .sep .t { font-weight: 300; font-size: 10px; letter-spacing: 0.3em; text-indent: 0.3em; color: rgba(227,207,169,0.5); }
+  .lang { position: absolute; top: 22px; right: 26px; display: flex; gap: 16px; }
+  .lang button { background: none; border: none; padding: 0; cursor: pointer; font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 12px; letter-spacing: 0.14em; color: rgba(242,240,232,0.5); }
+  .lang button.on { color: #E3CFA9; font-weight: 400; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lang">
+    <button id="de" class="on" onclick="setLang('de')">DE</button>
+    <button id="pl" onclick="setLang('pl')">PL</button>
+  </div>
+  <div class="inner">
+    <img class="logo" src="assets/monogram.png" alt="gf — Grzegorz Frydrych">
+    <div class="name">GRZEGORZ&nbsp;&nbsp;FRYDRYCH</div>
+    <div class="btns">
+      <div class="row">
+        <a class="btn" href="tel:+491603640793" data-i18n="call">ANRUFEN</a>
+        <a class="btn" href="mailto:gf@g-frydrych.de">E-MAIL</a>
+      </div>
+      <a class="btn door" href="tel:+48604527834"><span data-i18n="plphone">TELEFON PL</span><small>+48 604 527 834</small></a>
+      <a class="btn primary" href="kontakt.vcf" download="Grzegorz-Frydrych.vcf" data-i18n="save">KONTAKT SPEICHERN</a>
+      <div class="sep"><div class="l"></div><div class="t" data-i18n="worlds">MEINE WELTEN</div><div class="l"></div></div>
+      <a class="btn door" href="kontakt.html"><span data-i18n="privat">PRIVAT</span><small data-i18n="privatSub">über mich</small></a>
+      <a class="btn door" href="https://tafri.me"><span>T&amp;G ON TOUR</span><small>tafri.me</small></a>
+      <a class="btn door" href="https://frydent.de"><span>FRYDENT</span><small>frydent.de</small></a>
+    </div>
+    <div class="foot">+49 160 3640793 · GF@G-FRYDRYCH.DE<br>WUTACHTALBLICK 14 · 79848 BONNDORF</div>
+  </div>
+</div>
+<script>
+  var T = {
+    de: { call: 'ANRUFEN', save: 'KONTAKT SPEICHERN', plphone: 'TELEFON PL', worlds: 'MEINE WELTEN', privat: 'PRIVAT', privatSub: 'über mich' },
+    pl: { call: 'ZADZWOŃ', save: 'ZAPISZ KONTAKT', plphone: 'TELEFON PL', worlds: 'MOJE ŚWIATY', privat: 'PRYWATNIE', privatSub: 'o mnie' }
+  };
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.getElementById('de').classList.toggle('on', l === 'de');
+    document.getElementById('pl').classList.toggle('on', l === 'pl');
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n');
+      if (T[l][k]) el.textContent = T[l][k];
+    });
+    try { localStorage.setItem('gf-lang', l); } catch (e) {}
+  }
+  try {
+    var saved = localStorage.getItem('gf-lang');
+    if (saved && T[saved]) setLang(saved);
+  } catch (e) {}
+</script>
+</body>
+</html>
